@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="TodoApp" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="dgTodoList">
+        <DataGrid x:Name="dgTodoList" FontFamily="Arial" FontSize="16" FontWeight="Bold" Margin="10 0 10 10">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="CreationDate" Width="180"/>
-                <DataGridCheckBoxColumn Header="Done" Width="80"/>
-                <DataGridTextColumn Header="Todo" Width="*"/>
+                <DataGridTextColumn IsReadOnly="True" Header="CreationDate" Width="180"/>
+                <DataGridCheckBoxColumn IsReadOnly="False" Header="Done" Width="80"/>
+                <DataGridTextColumn IsReadOnly="False" Header="Todo" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
